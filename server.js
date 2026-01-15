@@ -88,3 +88,5 @@ app.post('/deletecharacter', async (req, res) => {
         res.status(500).json({message: 'Server error - could not delete character '+chara_name +' '+ id});
     }
 });
+
+//aaa
