@@ -7,8 +7,6 @@ let originalData = [];
 const App = () => {
     const [myData, setMyData] = useState([]);
 
-
-
     //Add useEffect = Exercise 1B
     useEffect(() => {
         //Add fetch() = Exercise 1A
@@ -39,7 +37,7 @@ const App = () => {
     const renderItem = ({item, index}) => {
         return (
             <View style={{flexDirection:'row',justifyContent:'space-between',alignItems:'center', borderWidth:1, backgroundColor:"powderblue"}} >
-                <Text style={{ backgroundColor:'powderblue', color:'navy'}}>{item.chara_name}</Text>
+                <Text style={{fontSize: 20, backgroundColor:'powderblue', color:'navy'}}>{item.chara_name}</Text>
                 <Image source ={{uri: item.chara_pic}}
                        style={{ width: 200, height: 270 , justifyContent: "center" }} />
             </View>
@@ -49,7 +47,7 @@ const App = () => {
     return (
         <View>
             <StatusBar/>
-            <Text>Search:</Text>
+            <Text style={{fontSize:20}}>Search:</Text>
             <TextInput style={{borderWidth:1}} onChangeText={(text)=>{FilterData(text)}}/>
             <FlatList data={myData} renderItem={renderItem} />
         </View>
