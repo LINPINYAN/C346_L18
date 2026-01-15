@@ -37,10 +37,10 @@ const App = () => {
 
     const renderItem = ({item, index}) => {
         return (
-            <View style={{flexDirection:'row',justifyContent:'space-between',alignItems:'center', borderWidth:1, backgroundColor:"powderblue"}} >
-                <Text style={{fontSize: 20, backgroundColor:'powderblue', color:'navy'}}>{item.chara_name}</Text>
+            <View style={{flexDirection:'row',justifyContent:'space-between',alignItems:'center', borderWidth:1, backgroundColor:"mistyrose"}} >
+                <Text style={{fontSize: 20, color:'palevioletred', padding:50}}>{item.chara_name}</Text>
                 <Image source ={{uri: item.chara_pic}}
-                       style={{ width: 155, height: 270 , justifyContent: "center", borderWidth:4, borderColor:"mistyrose", borderRadius:70, backgroundColor:'black'}} />
+                       style={{ width: 155, height: 270 , justifyContent: "center", borderWidth:4, borderColor:"lightpink", borderRadius:70, backgroundColor:'black'}} />
             </View>
         );
     };
