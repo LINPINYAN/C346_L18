@@ -4,6 +4,7 @@ import { FlatList, StatusBar, Text, TextInput, View, Image} from 'react-native';
 //Exercise 1C - create originalData
 let originalData = [];
 
+
 const App = () => {
     const [myData, setMyData] = useState([]);
 
@@ -39,7 +40,7 @@ const App = () => {
             <View style={{flexDirection:'row',justifyContent:'space-between',alignItems:'center', borderWidth:1, backgroundColor:"powderblue"}} >
                 <Text style={{fontSize: 20, backgroundColor:'powderblue', color:'navy'}}>{item.chara_name}</Text>
                 <Image source ={{uri: item.chara_pic}}
-                       style={{ width: 200, height: 270 , justifyContent: "center" }} />
+                       style={{ width: 155, height: 270 , justifyContent: "center", borderWidth:4, borderColor:"mistyrose", borderRadius:70, backgroundColor:'black'}} />
             </View>
         );
     };
